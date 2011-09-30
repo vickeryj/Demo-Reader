@@ -79,6 +79,8 @@
 
 - (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError
 {
+    [self.parser abortParsing];
+    self.parser.delegate = nil;
     [self.parserDelegate feed:self failedToParseWithError:parseError];
 }
 

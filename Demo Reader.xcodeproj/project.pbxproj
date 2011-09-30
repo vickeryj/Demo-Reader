@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A65479191436317B00C6A0FC /* badRSS.xml in Resources */ = {isa = PBXBuildFile; fileRef = A65479181436317B00C6A0FC /* badRSS.xml */; };
+		A654791D143638C800C6A0FC /* FeedURLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A654791B143638C800C6A0FC /* FeedURLViewController.m */; };
+		A654791E143638C800C6A0FC /* FeedURLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A654791C143638C800C6A0FC /* FeedURLViewController.xib */; };
 		A66873011435FA6900688FC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66873001435FA6900688FC2 /* UIKit.framework */; };
 		A66873031435FA6900688FC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66873021435FA6900688FC2 /* Foundation.framework */; };
 		A66873051435FA6900688FC2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66873041435FA6900688FC2 /* CoreGraphics.framework */; };
@@ -26,6 +28,7 @@
 		A668736014360C1200688FC2 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = A668735F14360C1200688FC2 /* Feed.m */; };
 		A668736C143617A600688FC2 /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A668736B143617A600688FC2 /* FeedItem.m */; };
 		A6687380143621E100688FC2 /* QCRSS.xml in Resources */ = {isa = PBXBuildFile; fileRef = A668737F143621E100688FC2 /* QCRSS.xml */; };
+		A69376B614363CEC00FD60A8 /* FeedItemsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69376B514363CEC00FD60A8 /* FeedItemsListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 
 /* Begin PBXFileReference section */
 		A65479181436317B00C6A0FC /* badRSS.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = badRSS.xml; sourceTree = "<group>"; };
+		A654791A143638C800C6A0FC /* FeedURLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedURLViewController.h; sourceTree = "<group>"; };
+		A654791B143638C800C6A0FC /* FeedURLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedURLViewController.m; sourceTree = "<group>"; };
+		A654791C143638C800C6A0FC /* FeedURLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedURLViewController.xib; path = "../View Controllers/FeedURLViewController.xib"; sourceTree = "<group>"; };
 		A66872FC1435FA6900688FC2 /* Demo Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66873001435FA6900688FC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A66873021435FA6900688FC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,6 +72,8 @@
 		A668736A143617A600688FC2 /* FeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItem.h; sourceTree = "<group>"; };
 		A668736B143617A600688FC2 /* FeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItem.m; sourceTree = "<group>"; };
 		A668737F143621E100688FC2 /* QCRSS.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = QCRSS.xml; sourceTree = "<group>"; };
+		A69376B414363CEC00FD60A8 /* FeedItemsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItemsListViewController.h; sourceTree = "<group>"; };
+		A69376B514363CEC00FD60A8 /* FeedItemsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItemsListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +182,7 @@
 		A66873331435FCD400688FC2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A654791C143638C800C6A0FC /* FeedURLViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +199,10 @@
 		A66873351435FCD400688FC2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A69376B414363CEC00FD60A8 /* FeedItemsListViewController.h */,
+				A69376B514363CEC00FD60A8 /* FeedItemsListViewController.m */,
+				A654791A143638C800C6A0FC /* FeedURLViewController.h */,
+				A654791B143638C800C6A0FC /* FeedURLViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -277,6 +290,7 @@
 			files = (
 				A668730B1435FA6900688FC2 /* InfoPlist.strings in Resources */,
 				A66873141435FA6900688FC2 /* MainWindow.xib in Resources */,
+				A654791E143638C800C6A0FC /* FeedURLViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +333,8 @@
 				A66873391435FD9400688FC2 /* FeedModelController.m in Sources */,
 				A668736014360C1200688FC2 /* Feed.m in Sources */,
 				A668736C143617A600688FC2 /* FeedItem.m in Sources */,
+				A654791D143638C800C6A0FC /* FeedURLViewController.m in Sources */,
+				A69376B614363CEC00FD60A8 /* FeedItemsListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +397,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -395,7 +411,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};

@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class FeedURLViewController;
+
 @interface Demo_ReaderAppDelegate : NSObject <UIApplicationDelegate> {
     
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) FeedURLViewController *urlViewController;
 
 @end

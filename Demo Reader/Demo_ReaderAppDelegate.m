@@ -7,17 +7,20 @@
 //
 
 #import "Demo_ReaderAppDelegate.h"
+#import "FeedURLViewController.h"
 
 @implementation Demo_ReaderAppDelegate
 
 
-@synthesize window=_window;
+@synthesize window=_window, urlViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
+    self.urlViewController = [[[FeedURLViewController alloc] initWithNibName:@"FeedURLViewController" bundle:nil] autorelease];
     
-    
+    [self.window addSubview:self.urlViewController.view];
+        
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -64,6 +67,7 @@
 - (void)dealloc
 {
     [_window release];
+    [urlViewController release];
     [super dealloc];
 }
 
