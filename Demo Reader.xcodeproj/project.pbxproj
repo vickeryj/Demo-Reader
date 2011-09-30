@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A66873011435FA6900688FC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66873001435FA6900688FC2 /* UIKit.framework */; };
+		A66873031435FA6900688FC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66873021435FA6900688FC2 /* Foundation.framework */; };
+		A66873051435FA6900688FC2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66873041435FA6900688FC2 /* CoreGraphics.framework */; };
+		A668730B1435FA6900688FC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A66873091435FA6900688FC2 /* InfoPlist.strings */; };
+		A668730E1435FA6900688FC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A668730D1435FA6900688FC2 /* main.m */; };
+		A66873111435FA6900688FC2 /* Demo_ReaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A66873101435FA6900688FC2 /* Demo_ReaderAppDelegate.m */; };
+		A66873141435FA6900688FC2 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A66873121435FA6900688FC2 /* MainWindow.xib */; };
+		A668731B1435FA6900688FC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66873001435FA6900688FC2 /* UIKit.framework */; };
+		A668731C1435FA6900688FC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66873021435FA6900688FC2 /* Foundation.framework */; };
+		A668731D1435FA6900688FC2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66873041435FA6900688FC2 /* CoreGraphics.framework */; };
+		A66873251435FA6900688FC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A66873231435FA6900688FC2 /* InfoPlist.strings */; };
+		A66873281435FA6900688FC2 /* Demo_ReaderTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A66873271435FA6900688FC2 /* Demo_ReaderTests.h */; };
+		A668732A1435FA6900688FC2 /* Demo_ReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A66873291435FA6900688FC2 /* Demo_ReaderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A668731E1435FA6900688FC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A66872F31435FA6900688FC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A66872FB1435FA6900688FC2;
+			remoteInfo = "Demo Reader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A66872FC1435FA6900688FC2 /* Demo Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66873001435FA6900688FC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A66873021435FA6900688FC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A66873041435FA6900688FC2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A66873081435FA6900688FC2 /* Demo Reader-Info.plist */ = {isa = PBXFileReference; path = "Demo Reader-Info.plist"; sourceTree = "<group>"; };
+		A668730A1435FA6900688FC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A668730C1435FA6900688FC2 /* Demo Reader-Prefix.pch */ = {isa = PBXFileReference; path = "Demo Reader-Prefix.pch"; sourceTree = "<group>"; };
+		A668730D1435FA6900688FC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A668730F1435FA6900688FC2 /* Demo_ReaderAppDelegate.h */ = {isa = PBXFileReference; path = Demo_ReaderAppDelegate.h; sourceTree = "<group>"; };
+		A66873101435FA6900688FC2 /* Demo_ReaderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_ReaderAppDelegate.m; sourceTree = "<group>"; };
+		A66873131435FA6900688FC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A668731A1435FA6900688FC2 /* Demo ReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo ReaderTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66873221435FA6900688FC2 /* Demo ReaderTests-Info.plist */ = {isa = PBXFileReference; path = "Demo ReaderTests-Info.plist"; sourceTree = "<group>"; };
+		A66873241435FA6900688FC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A66873261435FA6900688FC2 /* Demo ReaderTests-Prefix.pch */ = {isa = PBXFileReference; path = "Demo ReaderTests-Prefix.pch"; sourceTree = "<group>"; };
+		A66873271435FA6900688FC2 /* Demo_ReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo_ReaderTests.h; sourceTree = "<group>"; };
+		A66873291435FA6900688FC2 /* Demo_ReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_ReaderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A66872F91435FA6900688FC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66873011435FA6900688FC2 /* UIKit.framework in Frameworks */,
+				A66873031435FA6900688FC2 /* Foundation.framework in Frameworks */,
+				A66873051435FA6900688FC2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66873161435FA6900688FC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A668731B1435FA6900688FC2 /* UIKit.framework in Frameworks */,
+				A668731C1435FA6900688FC2 /* Foundation.framework in Frameworks */,
+				A668731D1435FA6900688FC2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A66872F11435FA6900688FC2 = {
+			isa = PBXGroup;
+			children = (
+				A66873061435FA6900688FC2 /* Demo Reader */,
+				A66873201435FA6900688FC2 /* Demo ReaderTests */,
+				A66872FF1435FA6900688FC2 /* Frameworks */,
+				A66872FD1435FA6900688FC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A66872FD1435FA6900688FC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A66872FC1435FA6900688FC2 /* Demo Reader.app */,
+				A668731A1435FA6900688FC2 /* Demo ReaderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A66872FF1435FA6900688FC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A66873001435FA6900688FC2 /* UIKit.framework */,
+				A66873021435FA6900688FC2 /* Foundation.framework */,
+				A66873041435FA6900688FC2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A66873061435FA6900688FC2 /* Demo Reader */ = {
+			isa = PBXGroup;
+			children = (
+				A668730F1435FA6900688FC2 /* Demo_ReaderAppDelegate.h */,
+				A66873101435FA6900688FC2 /* Demo_ReaderAppDelegate.m */,
+				A66873121435FA6900688FC2 /* MainWindow.xib */,
+				A66873071435FA6900688FC2 /* Supporting Files */,
+			);
+			path = "Demo Reader";
+			sourceTree = "<group>";
+		};
+		A66873071435FA6900688FC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A66873081435FA6900688FC2 /* Demo Reader-Info.plist */,
+				A66873091435FA6900688FC2 /* InfoPlist.strings */,
+				A668730C1435FA6900688FC2 /* Demo Reader-Prefix.pch */,
+				A668730D1435FA6900688FC2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A66873201435FA6900688FC2 /* Demo ReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				A66873271435FA6900688FC2 /* Demo_ReaderTests.h */,
+				A66873291435FA6900688FC2 /* Demo_ReaderTests.m */,
+				A66873211435FA6900688FC2 /* Supporting Files */,
+			);
+			path = "Demo ReaderTests";
+			sourceTree = "<group>";
+		};
+		A66873211435FA6900688FC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A66873221435FA6900688FC2 /* Demo ReaderTests-Info.plist */,
+				A66873231435FA6900688FC2 /* InfoPlist.strings */,
+				A66873261435FA6900688FC2 /* Demo ReaderTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A66872FB1435FA6900688FC2 /* Demo Reader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A668732D1435FA6900688FC2 /* Build configuration list for PBXNativeTarget "Demo Reader" */;
+			buildPhases = (
+				A66872F81435FA6900688FC2 /* Sources */,
+				A66872F91435FA6900688FC2 /* Frameworks */,
+				A66872FA1435FA6900688FC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo Reader";
+			productName = "Demo Reader";
+			productReference = A66872FC1435FA6900688FC2 /* Demo Reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A66873191435FA6900688FC2 /* Demo ReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A66873301435FA6900688FC2 /* Build configuration list for PBXNativeTarget "Demo ReaderTests" */;
+			buildPhases = (
+				A66873151435FA6900688FC2 /* Sources */,
+				A66873161435FA6900688FC2 /* Frameworks */,
+				A66873171435FA6900688FC2 /* Resources */,
+				A66873181435FA6900688FC2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A668731F1435FA6900688FC2 /* PBXTargetDependency */,
+			);
+			name = "Demo ReaderTests";
+			productName = "Demo ReaderTests";
+			productReference = A668731A1435FA6900688FC2 /* Demo ReaderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A66872F31435FA6900688FC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "PatientKeeper Inc.";
+			};
+			buildConfigurationList = A66872F61435FA6900688FC2 /* Build configuration list for PBXProject "Demo Reader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A66872F11435FA6900688FC2;
+			productRefGroup = A66872FD1435FA6900688FC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A66872FB1435FA6900688FC2 /* Demo Reader */,
+				A66873191435FA6900688FC2 /* Demo ReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A66872FA1435FA6900688FC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A668730B1435FA6900688FC2 /* InfoPlist.strings in Resources */,
+				A66873141435FA6900688FC2 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66873171435FA6900688FC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66873251435FA6900688FC2 /* InfoPlist.strings in Resources */,
+				A66873281435FA6900688FC2 /* Demo_ReaderTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A66873181435FA6900688FC2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A66872F81435FA6900688FC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A668730E1435FA6900688FC2 /* main.m in Sources */,
+				A66873111435FA6900688FC2 /* Demo_ReaderAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66873151435FA6900688FC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A668732A1435FA6900688FC2 /* Demo_ReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A668731F1435FA6900688FC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A66872FB1435FA6900688FC2 /* Demo Reader */;
+			targetProxy = A668731E1435FA6900688FC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A66873091435FA6900688FC2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A668730A1435FA6900688FC2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A66873121435FA6900688FC2 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A66873131435FA6900688FC2 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		A66873231435FA6900688FC2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A66873241435FA6900688FC2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A668732B1435FA6900688FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A668732C1435FA6900688FC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		A668732E1435FA6900688FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo Reader/Demo Reader-Prefix.pch";
+				INFOPLIST_FILE = "Demo Reader/Demo Reader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A668732F1435FA6900688FC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo Reader/Demo Reader-Prefix.pch";
+				INFOPLIST_FILE = "Demo Reader/Demo Reader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A66873311435FA6900688FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Demo Reader.app/Demo Reader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo ReaderTests/Demo ReaderTests-Prefix.pch";
+				INFOPLIST_FILE = "Demo ReaderTests/Demo ReaderTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A66873321435FA6900688FC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Demo Reader.app/Demo Reader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo ReaderTests/Demo ReaderTests-Prefix.pch";
+				INFOPLIST_FILE = "Demo ReaderTests/Demo ReaderTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A66872F61435FA6900688FC2 /* Build configuration list for PBXProject "Demo Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A668732B1435FA6900688FC2 /* Debug */,
+				A668732C1435FA6900688FC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A668732D1435FA6900688FC2 /* Build configuration list for PBXNativeTarget "Demo Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A668732E1435FA6900688FC2 /* Debug */,
+				A668732F1435FA6900688FC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A66873301435FA6900688FC2 /* Build configuration list for PBXNativeTarget "Demo ReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A66873311435FA6900688FC2 /* Debug */,
+				A66873321435FA6900688FC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A66872F31435FA6900688FC2 /* Project object */;
+}
