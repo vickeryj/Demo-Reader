@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FeedItem.h"
 
 @class Feed;
 
-@interface FeedItemsListViewController : UITableViewController {
+@interface FeedItemsListViewController : UITableViewController<FeedItemDelegate> {
     
 }
 

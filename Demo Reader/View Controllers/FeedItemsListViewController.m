@@ -8,7 +8,6 @@
 
 #import "FeedItemsListViewController.h"
 #import "Feed.h"
-#import "FeedItem.h"
 
 @implementation FeedItemsListViewController
 
@@ -16,6 +15,17 @@
 
 - (void)dismiss {
     [self dismissModalViewControllerAnimated:YES];
+}
+
+- (void)loadImagesForOnscreenRows
+{
+    NSArray *visiblePaths = [self.tableView indexPathsForVisibleRows];
+    for (NSIndexPath *indexPath in visiblePaths)
+    {
+        FeedItem *item = [self.feed.items objectAtIndex:indexPath.row];
+        [item downloadImage];
+    }
+
 }
 
 #pragma mark UIViewController methods
@@ -36,8 +46,19 @@
          forControlEvents:UIControlEventTouchUpInside];
     
     self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:infoButton] autorelease];
+    
+    //Set ourselves as the delegate for all the feed items to be notified
+    //when images are downloaded
+    [self.feed.items makeObjectsPerformSelector:@selector(setDelegate:) 
+                                     withObject:self];
 }
 
+#pragma mark FeedItemDelegateMethods
+-  (void)feedItemDidFinishDownloadingImage:(FeedItem *)item {
+    NSInteger itemIndex = [self.feed.items indexOfObject:item];
+    UITableViewCell *itemCell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:itemIndex inSection:0]];
+    itemCell.imageView.image = [item itemImage];
+}
 
 #pragma mark - UITableView methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -53,14 +74,40 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        cell.textLabel.numberOfLines = 2;
+        cell.textLabel.numberOfLines = 3;
+        cell.textLabel.font = [UIFont boldSystemFontOfSize:14];
     }
     
-    cell.textLabel.text = [[feed.items objectAtIndex:indexPath.row] title];
-    cell.detailTextLabel.text = [[feed.items objectAtIndex:indexPath.row] pubDate];
+    FeedItem *item = [feed.items objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = [item title];
+    cell.detailTextLabel.text = [item pubDate];
+    cell.imageView.image = [item itemImage];
         
+    if (self.tableView.dragging == NO && self.tableView.decelerating == NO)
+    {
+        [item downloadImage];
+    }
+
+    
     return cell;
 }
+
+#pragma mark UIScrollViewDelegate
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    if (!decelerate)
+	{
+        [self loadImagesForOnscreenRows];
+    }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    [self loadImagesForOnscreenRows];
+}
+
 
 #pragma mark cleanup
 - (void)dealloc

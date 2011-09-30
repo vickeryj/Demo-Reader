@@ -140,6 +140,41 @@
                                    
 }
 
+- (void)testImageLoading
+{
+    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"JoshDemoRSS"
+                                                                          ofType:@"xml"];
+    NSURL *fileURL = [NSURL fileURLWithPath:filePath];
+    
+    [self parseFeedData:[NSData dataWithContentsOfURL:fileURL]];
+    
+    STAssertTrue(self.feedParsed, @"We should be able to parse JoshDemo.xml");
+    
+    STAssertTrue([[self.parsedFeed items] count] == 4, @"JoshDemoRSS should have 4 items in it.");
+    
+    
+    STAssertNil([[self.parsedFeed.items objectAtIndex:3] itemImage], 
+                @"items with no image in the RSS should not have an image");
+    
+    for (int i = 0; i < 3; i++) {
+        STAssertNotNil([[self.parsedFeed.items objectAtIndex:i] itemImage], 
+                       @"items with an image in the RSS should have an image, even if it's just a placeholder");
+
+        SyncAsyncRunner *runner = [[[SyncAsyncRunner alloc] init] autorelease];    
+        
+        FeedItem *item = [self.parsedFeed.items objectAtIndex:i];
+        item.delegate = (id<FeedItemDelegate>)runner;
+        
+        BOOL callbackReceived = [runner waitForResponseFromTarget:item 
+                                                        toMessage:@selector(downloadImage)];
+        
+        STAssertTrue(callbackReceived, @"We should get a callback when an image is downloaded");
+
+    }
+
+    
+}
+
 #pragma mark FeedModelControllerProtocol methods
 - (void)feedModelController:(FeedModelController *)controller didFetchFeed:(Feed *)feed {
     self.feedFetched = YES;

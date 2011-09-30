@@ -28,6 +28,8 @@
     //setup the XML parser and let it rip
     self.parser = [[[NSXMLParser alloc] initWithData:data] autorelease];
     self.parser.delegate = self;
+    //turn off namespace support so we get "media:" tags without the "media:" stripped
+    [self.parser setShouldProcessNamespaces:NO];
     [self.parser parse];
 
 }
@@ -59,7 +61,7 @@
         }
     }
     else {
-        [self.currentItem beginElement:elementName];
+        [self.currentItem beginElement:elementName attributes:attributeDict];
     }
 }
 
