@@ -31,6 +31,7 @@
 		A69376B614363CEC00FD60A8 /* FeedItemsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A69376B514363CEC00FD60A8 /* FeedItemsListViewController.m */; };
 		A6F1E6F81436559B0095D594 /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F1E6F71436559B0095D594 /* Placeholder.png */; };
 		A6F1E6FA14365EE50095D594 /* JoshDemoRSS.xml in Resources */ = {isa = PBXBuildFile; fileRef = A6F1E6F914365EE50095D594 /* JoshDemoRSS.xml */; };
+		A6F1E6FC143664760095D594 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F1E6FB143664760095D594 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		A69376B514363CEC00FD60A8 /* FeedItemsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItemsListViewController.m; sourceTree = "<group>"; };
 		A6F1E6F71436559B0095D594 /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
 		A6F1E6F914365EE50095D594 /* JoshDemoRSS.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = JoshDemoRSS.xml; sourceTree = "<group>"; };
+		A6F1E6FB143664760095D594 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		A66873071435FA6900688FC2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A6F1E6FB143664760095D594 /* Icon.png */,
 				A6F1E6F71436559B0095D594 /* Placeholder.png */,
 				A66873081435FA6900688FC2 /* Demo Reader-Info.plist */,
 				A66873091435FA6900688FC2 /* InfoPlist.strings */,
@@ -298,6 +301,7 @@
 				A66873141435FA6900688FC2 /* MainWindow.xib in Resources */,
 				A654791E143638C800C6A0FC /* FeedURLViewController.xib in Resources */,
 				A6F1E6F81436559B0095D594 /* Placeholder.png in Resources */,
+				A6F1E6FC143664760095D594 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
