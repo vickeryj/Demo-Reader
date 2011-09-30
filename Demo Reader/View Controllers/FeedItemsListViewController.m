@@ -26,12 +26,16 @@
 }
 
 - (void)viewDidLoad {
+    
+    self.tableView.rowHeight = 80.f;
+    
     UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    
     [infoButton addTarget:self 
                    action:@selector(dismiss) 
          forControlEvents:UIControlEventTouchUpInside];
     
-    self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:infoButton] autorelease];
+    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:infoButton] autorelease];
 }
 
 
@@ -47,11 +51,13 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.textLabel.numberOfLines = 2;
     }
     
     cell.textLabel.text = [[feed.items objectAtIndex:indexPath.row] title];
+    cell.detailTextLabel.text = [[feed.items objectAtIndex:indexPath.row] pubDate];
         
     return cell;
 }

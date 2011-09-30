@@ -13,10 +13,13 @@
     
 }
 
+//parsing methods
 - (void)beginElement:(NSString *)element;
+- (void)endElement:(NSString *)element;
 - (void)appendTextToCurrentTextProperty:(NSString *)textToAppend;
 
-
+//item properties
 - (NSString *)title;
+- (NSString *)pubDate;
 
 @end

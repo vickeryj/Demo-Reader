@@ -119,6 +119,7 @@
     
     for (FeedItem *item in self.parsedFeed.items) {
         STAssertNotNil([item title], @"every item in QCRSS should have a title");
+        STAssertNotNil([item pubDate], @"every item in QCRSS should have a pubDate");
     }
 
 

@@ -11,14 +11,16 @@
 @interface FeedItem()
 
 @property(nonatomic, retain) NSMutableString *internalTitle;
+@property(nonatomic, retain) NSMutableString *internalPubDate;
 
 @property(nonatomic, assign) NSMutableString *currentTextProperty;
+
 
 @end
 
 @implementation FeedItem
 
-@synthesize internalTitle, currentTextProperty;
+@synthesize internalTitle, currentTextProperty, internalPubDate;
 
 
 - (void)beginElement:(NSString *)element {
@@ -26,9 +28,17 @@
         self.internalTitle = [NSMutableString string];
         self.currentTextProperty = self.internalTitle;
     }
+    else if ([element isEqualToString:@"pubDate"]) {
+        self.internalPubDate = [NSMutableString string];
+        self.currentTextProperty = self.internalPubDate;
+    }
     else {
         self.currentTextProperty = nil;
     }
+}
+
+- (void)endElement:(NSString *)element {
+    self.currentTextProperty = nil;
 }
 
 - (void)appendTextToCurrentTextProperty:(NSString *)textToAppend {
@@ -39,9 +49,15 @@
     return self.internalTitle;
 }
 
+- (NSString *)pubDate {
+    return self.internalPubDate;
+}
+
+
 #pragma mark cleanup
 - (void)dealloc {
     [internalTitle release];
+    [internalPubDate release];
     [super dealloc];
 }
 

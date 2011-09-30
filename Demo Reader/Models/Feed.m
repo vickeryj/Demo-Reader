@@ -70,6 +70,9 @@
         [self.internalItems addObject:currentItem];
         self.currentItem = nil;
     }
+    else {
+        [self.currentItem endElement:elementName];
+    }
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
