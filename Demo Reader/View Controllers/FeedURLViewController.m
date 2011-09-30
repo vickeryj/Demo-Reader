@@ -58,8 +58,20 @@
 didFailToFetchFeedWithError:(NSError *)error 
 {
     [self feedFetchDone];
+    
+    NSString *errorMessage = nil;
+    if (FEED_MODEL_CONTROLLER_ERROR_BAD_URL == [error code]) {
+        errorMessage = @"That doesn't look like a valid URL that you entered. Perhaps there is a typo?";
+    }
+    else if ([NSURLErrorDomain isEqualToString:[error domain]]) {
+        errorMessage = @"I wasn't able to connect to the server at the URL you entered. Perhaps there is a typo in the URL?";
+    }
+    else {
+        errorMessage = @"I wasn't able to read the RSS at the URL that you typed. Perhaps there is a typo in the URL?";
+    }
+    
     UIAlertView *errorAlert = [[[UIAlertView alloc] initWithTitle:@"Error" 
-                                                          message:nil 
+                                                          message:errorMessage 
                                                          delegate:nil
                                                 cancelButtonTitle:@"OK"
                                                 otherButtonTitles:nil] autorelease];

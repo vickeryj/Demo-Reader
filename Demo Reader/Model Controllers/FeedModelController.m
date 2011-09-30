@@ -31,12 +31,19 @@
         error = [NSError errorWithDomain:FEED_MODEL_CONTROLLER_ERROR_DOMAIN code:FEED_MODEL_CONTROLLER_ERROR_BAD_URL userInfo:nil];
     }
     else {
+
+        if (NSNotFound == [self.url rangeOfString:@"://"].location) {
+            //No protocol in the url, let's put a default http:// in there
+            self.url = [NSString stringWithFormat:@"http://%@",self.url];
+        }
+        
         NSURL *parsedURL = [NSURL URLWithString:self.url];
         if (nil == parsedURL) {
             error = [NSError errorWithDomain:FEED_MODEL_CONTROLLER_ERROR_DOMAIN code:FEED_MODEL_CONTROLLER_ERROR_BAD_URL userInfo:nil];
         }
         else {
             NSMutableURLRequest *feedRequest = [NSMutableURLRequest requestWithURL:parsedURL];
+            [feedRequest setTimeoutInterval:15];//If we can't fetch the RSS in 15 seconds we've got issues
             NSURLConnection *feedConnection = [NSURLConnection connectionWithRequest:feedRequest delegate:self];
             [feedConnection start];
         }

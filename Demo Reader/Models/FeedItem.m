@@ -29,7 +29,7 @@
 @synthesize internalImage, delegate, downloadInProgress, downloadingImageData;
 @synthesize downloadConnection;
 
-
+#pragma mark RSS parsing support
 - (void)beginElement:(NSString *)element attributes:(NSDictionary *)attributes {
     if ([element isEqualToString:@"title"]) {
         self.internalTitle = [NSMutableString string];
