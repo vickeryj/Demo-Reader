@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A65479191436317B00C6A0FC /* badRSS.xml in Resources */ = {isa = PBXBuildFile; fileRef = A65479181436317B00C6A0FC /* badRSS.xml */; };
 		A66873011435FA6900688FC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66873001435FA6900688FC2 /* UIKit.framework */; };
 		A66873031435FA6900688FC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66873021435FA6900688FC2 /* Foundation.framework */; };
 		A66873051435FA6900688FC2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66873041435FA6900688FC2 /* CoreGraphics.framework */; };
@@ -20,6 +21,11 @@
 		A66873251435FA6900688FC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A66873231435FA6900688FC2 /* InfoPlist.strings */; };
 		A66873281435FA6900688FC2 /* Demo_ReaderTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A66873271435FA6900688FC2 /* Demo_ReaderTests.h */; };
 		A668732A1435FA6900688FC2 /* Demo_ReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A66873291435FA6900688FC2 /* Demo_ReaderTests.m */; };
+		A66873391435FD9400688FC2 /* FeedModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66873381435FD9400688FC2 /* FeedModelController.m */; };
+		A668735D1436039200688FC2 /* SyncAsyncRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = A668735B1436039200688FC2 /* SyncAsyncRunner.m */; };
+		A668736014360C1200688FC2 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = A668735F14360C1200688FC2 /* Feed.m */; };
+		A668736C143617A600688FC2 /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A668736B143617A600688FC2 /* FeedItem.m */; };
+		A6687380143621E100688FC2 /* QCRSS.xml in Resources */ = {isa = PBXBuildFile; fileRef = A668737F143621E100688FC2 /* QCRSS.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,23 +39,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A65479181436317B00C6A0FC /* badRSS.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = badRSS.xml; sourceTree = "<group>"; };
 		A66872FC1435FA6900688FC2 /* Demo Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66873001435FA6900688FC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A66873021435FA6900688FC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A66873041435FA6900688FC2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A66873081435FA6900688FC2 /* Demo Reader-Info.plist */ = {isa = PBXFileReference; path = "Demo Reader-Info.plist"; sourceTree = "<group>"; };
+		A66873081435FA6900688FC2 /* Demo Reader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo Reader-Info.plist"; sourceTree = "<group>"; };
 		A668730A1435FA6900688FC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A668730C1435FA6900688FC2 /* Demo Reader-Prefix.pch */ = {isa = PBXFileReference; path = "Demo Reader-Prefix.pch"; sourceTree = "<group>"; };
+		A668730C1435FA6900688FC2 /* Demo Reader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo Reader-Prefix.pch"; sourceTree = "<group>"; };
 		A668730D1435FA6900688FC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A668730F1435FA6900688FC2 /* Demo_ReaderAppDelegate.h */ = {isa = PBXFileReference; path = Demo_ReaderAppDelegate.h; sourceTree = "<group>"; };
+		A668730F1435FA6900688FC2 /* Demo_ReaderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo_ReaderAppDelegate.h; sourceTree = "<group>"; };
 		A66873101435FA6900688FC2 /* Demo_ReaderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_ReaderAppDelegate.m; sourceTree = "<group>"; };
 		A66873131435FA6900688FC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		A668731A1435FA6900688FC2 /* Demo ReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo ReaderTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A66873221435FA6900688FC2 /* Demo ReaderTests-Info.plist */ = {isa = PBXFileReference; path = "Demo ReaderTests-Info.plist"; sourceTree = "<group>"; };
+		A66873221435FA6900688FC2 /* Demo ReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo ReaderTests-Info.plist"; sourceTree = "<group>"; };
 		A66873241435FA6900688FC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A66873261435FA6900688FC2 /* Demo ReaderTests-Prefix.pch */ = {isa = PBXFileReference; path = "Demo ReaderTests-Prefix.pch"; sourceTree = "<group>"; };
+		A66873261435FA6900688FC2 /* Demo ReaderTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo ReaderTests-Prefix.pch"; sourceTree = "<group>"; };
 		A66873271435FA6900688FC2 /* Demo_ReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo_ReaderTests.h; sourceTree = "<group>"; };
 		A66873291435FA6900688FC2 /* Demo_ReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_ReaderTests.m; sourceTree = "<group>"; };
+		A66873371435FD9400688FC2 /* FeedModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedModelController.h; sourceTree = "<group>"; };
+		A66873381435FD9400688FC2 /* FeedModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedModelController.m; sourceTree = "<group>"; };
+		A668735B1436039200688FC2 /* SyncAsyncRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncAsyncRunner.m; sourceTree = "<group>"; };
+		A668735C1436039200688FC2 /* SyncAsyncRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncAsyncRunner.h; sourceTree = "<group>"; };
+		A668735E14360C1200688FC2 /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
+		A668735F14360C1200688FC2 /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
+		A668736A143617A600688FC2 /* FeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedItem.h; sourceTree = "<group>"; };
+		A668736B143617A600688FC2 /* FeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedItem.m; sourceTree = "<group>"; };
+		A668737F143621E100688FC2 /* QCRSS.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = QCRSS.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +124,10 @@
 		A66873061435FA6900688FC2 /* Demo Reader */ = {
 			isa = PBXGroup;
 			children = (
+				A66873331435FCD400688FC2 /* Views */,
+				A66873341435FCD400688FC2 /* Model Controllers */,
+				A66873351435FCD400688FC2 /* View Controllers */,
+				A66873361435FCD400688FC2 /* Models */,
 				A668730F1435FA6900688FC2 /* Demo_ReaderAppDelegate.h */,
 				A66873101435FA6900688FC2 /* Demo_ReaderAppDelegate.m */,
 				A66873121435FA6900688FC2 /* MainWindow.xib */,
@@ -130,6 +150,8 @@
 		A66873201435FA6900688FC2 /* Demo ReaderTests */ = {
 			isa = PBXGroup;
 			children = (
+				A668735C1436039200688FC2 /* SyncAsyncRunner.h */,
+				A668735B1436039200688FC2 /* SyncAsyncRunner.m */,
 				A66873271435FA6900688FC2 /* Demo_ReaderTests.h */,
 				A66873291435FA6900688FC2 /* Demo_ReaderTests.m */,
 				A66873211435FA6900688FC2 /* Supporting Files */,
@@ -143,8 +165,44 @@
 				A66873221435FA6900688FC2 /* Demo ReaderTests-Info.plist */,
 				A66873231435FA6900688FC2 /* InfoPlist.strings */,
 				A66873261435FA6900688FC2 /* Demo ReaderTests-Prefix.pch */,
+				A668737F143621E100688FC2 /* QCRSS.xml */,
+				A65479181436317B00C6A0FC /* badRSS.xml */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A66873331435FCD400688FC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A66873341435FCD400688FC2 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A66873371435FD9400688FC2 /* FeedModelController.h */,
+				A66873381435FD9400688FC2 /* FeedModelController.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		A66873351435FCD400688FC2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A66873361435FCD400688FC2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A668735E14360C1200688FC2 /* Feed.h */,
+				A668735F14360C1200688FC2 /* Feed.m */,
+				A668736A143617A600688FC2 /* FeedItem.h */,
+				A668736B143617A600688FC2 /* FeedItem.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +286,8 @@
 			files = (
 				A66873251435FA6900688FC2 /* InfoPlist.strings in Resources */,
 				A66873281435FA6900688FC2 /* Demo_ReaderTests.h in Resources */,
+				A6687380143621E100688FC2 /* QCRSS.xml in Resources */,
+				A65479191436317B00C6A0FC /* badRSS.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +316,9 @@
 			files = (
 				A668730E1435FA6900688FC2 /* main.m in Sources */,
 				A66873111435FA6900688FC2 /* Demo_ReaderAppDelegate.m in Sources */,
+				A66873391435FD9400688FC2 /* FeedModelController.m in Sources */,
+				A668736014360C1200688FC2 /* Feed.m in Sources */,
+				A668736C143617A600688FC2 /* FeedItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A668732A1435FA6900688FC2 /* Demo_ReaderTests.m in Sources */,
+				A668735D1436039200688FC2 /* SyncAsyncRunner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +492,7 @@
 				A668732F1435FA6900688FC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A66873301435FA6900688FC2 /* Build configuration list for PBXNativeTarget "Demo ReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +501,7 @@
 				A66873321435FA6900688FC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

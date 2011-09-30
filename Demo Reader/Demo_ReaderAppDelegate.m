@@ -3,7 +3,7 @@
 //  Demo Reader
 //
 //  Created by Joshua Vickery on 9/30/11.
-//  Copyright 2011 PatientKeeper Inc. All rights reserved.
+//  Copyright 2011 Joshua Vickery. All rights reserved.
 //
 
 #import "Demo_ReaderAppDelegate.h"
@@ -15,7 +15,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
