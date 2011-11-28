@@ -3,17 +3,17 @@
         <title>Josh RSS</title>
         <item>
             <title>enclosure image</title>
-            <enclosure url="http://jsv.mine.nu/gallery/d/2299-2/travel.jpg" type="image/jpeg"/>
+            <enclosure url="http://vickeryj.com/ipod.jpg" type="image/jpeg"/>
             <pubDate>Fri, 30 Sep 2011 12:32:14 -0700</pubDate>
         </item>
         <item>
             <title>media:content image</title>
-            <media:content url="http://jsv.mine.nu/gallery/d/2299-2/travel.jpg" type="image/jpeg" height="150" width="150"/>
+            <media:content url="http://vickeryj.com/ipod.jpg" type="image/jpeg" height="150" width="150"/>
             <pubDate>Fri, 30 Sep 2011 12:32:14 -0700</pubDate>
         </item>
         <item>
             <title>media:thumbnail image</title>
-            <media:thumbnail url="http://jsv.mine.nu/gallery/d/2299-2/travel.jpg" type="image/jpeg" height="150" width="150"/>
+            <media:thumbnail url="http://vickeryj.com/ipod.jpg" type="image/jpeg" height="150" width="150"/>
             <pubDate>Fri, 30 Sep 2011 12:32:14 -0700</pubDate>
         </item>
         <item>
